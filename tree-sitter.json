@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "version": "0.0.1",
+    "license": "MIT",
+    "authors": [
+      {
+        "name": "monaqa"
+      }
+    ],
+    "description": "Mermaid grammar for tree-sitter",
+    "links": {
+      "repository": "https://github.com/monaqa/tree-sitter-mermaid"
+    }
+  },
+  "grammars": [
+    {
+      "name": "mermaid",
+      "scope": "text.mermaid",
+      "path": ".",
+      "injection-regex": "^(mermaid|mmd)$",
+      "file-types": [
+        "mmd"
+      ],
+      "highlights": "queries/highlights.scm"
+    }
+  ],
+  "bindings": {
+    "c": true,
+    "go": false,
+    "node": true,
+    "python": true,
+    "rust": true,
+    "swift": true,
+    "java": false,
+    "zig": false
+  }
+}
